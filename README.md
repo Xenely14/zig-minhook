@@ -58,7 +58,7 @@ pub fn main() !void {
     try minhook.createHook(msgbox_ptr.?, @ptrCast(&messageBoxADetour), @ptrCast(&messageBoxAPtr));
     try minhook.enableHook(minhook.ALL);
 
-    // Call an original function
+    // Calling an original function
     const originalFunction: @TypeOf(messageBoxAPtr) = @ptrCast(msgbox_ptr);
     _ = originalFunction(null, "Hello world!", "Title", 0x20);
 }
