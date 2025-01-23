@@ -13,7 +13,7 @@ It's uses Zig build system to statically-compile source library and uses `MinHoo
 ```
 zig fetch --save git+https://github.com/Xenely14/zig-minhook#main
 ```
-2. In your `build.zig`, add the `minhook` module as a dependency you your program:
+2. In your `build.zig`, add the `minhook` module as a dependency to your program:
 ```zig
 const minhook = b.dependency("minhook", .{});
 
