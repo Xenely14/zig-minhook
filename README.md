@@ -2,7 +2,7 @@
 The Minimalistic x86/x64 API Hooking Library for Windows
 
 ## Details
-This library is a wrap of original [MinHook](https://github.com/TsudaKageyu/minhook) library.<br>
+This library is a wrap for original [MinHook](https://github.com/TsudaKageyu/minhook) library.<br>
 It's uses Zig build system to statically-compile source library and uses `MinHook.h` header file to wrap library functions.<br><br>
 
 > [!Important]  
