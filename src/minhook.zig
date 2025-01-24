@@ -63,7 +63,7 @@ pub fn enableHook(target: ?*const anyopaque) !void {
 
 /// Disables an already created hook.
 pub fn disableHook(target: ?*const anyopaque) !void {
-    if (getMinhookError(minhook.MH_DisableHook(@constCasttarget)))) |err| {
+    if (getMinhookError(minhook.MH_DisableHook(@constCast(target)))) |err| {
         return err;
     }
 }
