@@ -1,6 +1,8 @@
 .{
-    .name = "minhook",
+    .name = .minhook,
     .version = "0.0.0",
+    .fingerprint = 0xfbe8f9ac36a0a107,
+    .minimum_zig_version = "0.14.0",
     .dependencies = .{},
     .paths = .{
         "build.zig",
