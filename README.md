@@ -11,7 +11,7 @@ It's uses Zig build system to statically-compile source library and uses `MinHoo
 ## Installation
 1. Add zig-minhook as a dependency in your `build.zig.zon` file:
 ```
-zig fetch --save git+https://github.com/Xenely14/zig-minhook#main
+zig fetch --save git+https://github.com/Xenely14/zig-minhook
 ```
 2. In your `build.zig`, add the `minhook` module as a dependency to your program:
 ```zig
