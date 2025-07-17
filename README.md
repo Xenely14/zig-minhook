@@ -55,7 +55,7 @@ pub fn main() !void {
     }
 
     // Creating hook to `MessageBoxA` function and enabling it
-    try minhook.createHook(msgbox_ptr.?, @ptrCast(&messageBoxADetour), @ptrCast(&messageBoxAPtr));
+    try minhook.createHook(msgbox_ptr.?, &messageBoxADetour, &messageBoxAPtr);
     try minhook.enableHook(minhook.ALL);
 
     // Calling an original function
