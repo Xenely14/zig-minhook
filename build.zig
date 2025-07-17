@@ -23,8 +23,10 @@ pub fn build(b: *std.Build) void {
 
     const minhook_lib = b.addLibrary(.{
         .name = "minhook",
-        .target = target,
-        .optimize = optimize,
+        .root_module = b.createModule(.{
+            .target = target,
+            .optimize = optimize,
+        }),
     });
 
     minhook_lib.linkLibC();
