@@ -21,7 +21,7 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
-    const minhook_lib = b.addStaticLibrary(.{
+    const minhook_lib = b.addLibrary(.{
         .name = "minhook",
         .target = target,
         .optimize = optimize,
