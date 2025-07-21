@@ -38,7 +38,7 @@ pub fn build(b: *std.Build) void {
         },
     });
 
-    if (@sizeOf(*anyopaque) == 8) {
+    if (target.result.cpu.arch == .x86_64) {
         minhook_lib.addCSourceFile(.{ .file = b.path("minhook/src/hde/hde64.c") });
     } else {
         minhook_lib.addCSourceFile(.{ .file = b.path("minhook/src/hde/hde32.c") });
